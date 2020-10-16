@@ -1,0 +1,68 @@
+@import 'variables';
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: $primary_font_size;
+    color: $primary_text-color;
+    text-align: center;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: $primary;
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+.home {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 50%);
+
+    .group {
+        grid-area: 1/1/6/2;
+    }
+
+    .currency {
+        grid-area: 1/2/2/3;
+    }
+
+    .cart {
+        grid-area: 2/2/6/3;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    border: 0 none transparent;
+    background-color: transparent;
+}
+
+h4 {
+    font-size: 1rem;
+    color: $primary_text-color;
+    margin: 1rem;
+}
+
+thead {
+    th {
+        color: $primary_text-color;
+        font-size: 1rem;
+    }
+}
+
+span {
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: $card;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}

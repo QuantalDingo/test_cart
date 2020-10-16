@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Group class="group"></Group>
+    <Currency class="currency"></Currency>
+    <Cart class="cart"></Cart>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Cart from "@/components/Cart";
+import Group from "@/components/Group";
+import Currency from "@/components/Currency";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: { Group, Cart, Currency }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/_general.scss";
+</style>
